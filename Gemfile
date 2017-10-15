@@ -7,6 +7,8 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'bootstrap', '~> 4.0.0.beta'
+
 
 group :development do
   gem 'spring'
