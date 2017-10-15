@@ -1,14 +1,32 @@
 AllCops:
   Include:
-    - Rakefile
     - config.ru
   Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
     - db/schema.rb
     - db/migrate/*
     - bin/*
+    - config/*
+    - config/environments/*
+    - config/initializers/*.rb
+  TargetRubyVersion: 2.3
 
 Style/Documentation:
   Enabled: false
 
 Style/ClassVars:
   Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 35
+
+Metrics/LineLength:
+  Max: 100

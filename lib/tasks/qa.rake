@@ -16,14 +16,14 @@ namespace :qa do
 
     desc 'Execute reek'
     Reek::Rake::Task.new do |task|
-      task.config_file   = 'config/config.reek'
+      task.config_file = 'config/config.reek'
       task.source_files = '{app/**/*.rb,lib/**/*.rb,lib/tasks/*.rake,config/**/*.rb}'
     end
 
     desc 'Execute haml-lint'
     task haml_lint: :environment do
       puts 'HAML-LINT'
-      puts %x(haml-lint .)
+      puts '%x(haml-lint .)'
     end
 
     desc 'Execute rails_best_practices'
@@ -37,7 +37,7 @@ namespace :qa do
 end
 
 task :qa do
-  %w(rubocop reek rbp spec).each do |task|
+  %w[rubocop reek rbp spec].each do |task|
     Rake::Task["qa:#{task}"].invoke
   end
 end
