@@ -1,2 +1,37 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+%section#home.full-page
+  = render partial: 'home'
+
+%nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light
+  .container
+    = link_to 'Logo', '#', class: 'navbar-brand mx-auto'
+    %button.navbar-toggler{'aria': {controls: '#navbarContent', expanded: 'false', label: 'Toggle Navigation'}, data: {target: '#navbarContent', toggle: 'collapse'}, type: 'button'}
+      %span.navbar-toggler-icon
+    #navbarContent.collapse.navbar-collapse
+      %ul.navbar-nav.mx-auto.text-center
+        %li.nav-item
+          = link_to 'HOME', '#home', class: 'nav-link'
+        %li.nav-item
+          = link_to 'GROOM & BRIDE', '#who', class: 'nav-link'
+        %li.nav-item
+          = link_to 'WHEN & WHERE', '#event', class: 'nav-link'
+        %li.nav-item
+          = link_to 'GUESTBOOK', '#guestbook', class: 'nav-link'
+        %li.nav-item
+          = link_to 'GALLERY', '#gallery', class: 'nav-link'
+        %li.nav-item
+          = link_to 'BLOG', '#blog', class: 'nav-link'
+
+%section#who.full-page
+  = render partial: 'who'
+
+%section#event.full-page
+  = render partial: 'event'
+
+%section#guestbook.full-page
+  = render partial: 'guestbook'
+
+%section#gallery.full-page
+  = render partial: 'gallery'
+
+%section#blog.full-page
+  = render partial: 'blog'
