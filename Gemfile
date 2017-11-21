@@ -8,7 +8,7 @@ gem 'sass-rails'
 gem 'turbolinks'
 gem 'uglifier'
 
-gem 'bootstrap', '~> 4.0.0.beta'
+gem 'bootstrap', '~> 4.0.0.beta2.1'
 
 gem 'autoprefixer-rails'
 
