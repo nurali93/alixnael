@@ -1,4 +1,10 @@
 .full-page {
   height: 100vh;
-  padding-top: $navbar-height;
+  padding-top: 5rem;
+}
+
+@include media-breakpoint-down(md) {
+  .full-page {
+    padding-top: 20rem;
+  }
 }

@@ -1,10 +1,10 @@
-%section#home.full-page
+%section#home.full-page.d-none.d-lg-block
   = render partial: 'home'
 
 %nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light
   .container
-    = link_to 'Logo', '#', class: 'navbar-brand mx-auto'
-    %button.navbar-toggler{'aria': {controls: '#navbarContent', expanded: 'false', label: 'Toggle Navigation'}, data: {target: '#navbarContent', toggle: 'collapse'}, type: 'button'}
+    = link_to 'Logo', '#home', class: 'navbar-brand'
+    %button.navbar-toggler{type: 'button',data: {target: '#navbarContent', toggle: 'collapse'}, 'aria': {controls: '#navbarContent', expanded: 'false', label: 'Toggle Navigation'}}
       %span.navbar-toggler-icon
     #navbarContent.collapse.navbar-collapse
       %ul.navbar-nav.mx-auto.text-center
@@ -20,6 +20,9 @@
           = link_to 'GALLERY', '#gallery', class: 'nav-link'
         %li.nav-item
           = link_to 'BLOG', '#blog', class: 'nav-link'
+
+%section#home.full-page.d-lg-none.p-0
+  = render partial: 'home'
 
 %section#who.full-page
   = render partial: 'who'
