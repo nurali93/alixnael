@@ -26,4 +26,4 @@ rails qa
 
 ### Deployment
 
-Every push to master is deployed automatically to [http://alixnael.herokuapp.com](alixnael.herokuapp.com)
+Every push to master is deployed automatically to [alixnael.herokuapp.com](http://alixnael.herokuapp.com)
