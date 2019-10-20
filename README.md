@@ -3,19 +3,27 @@
 Necessary steps to get the application up and running.
 
 ### Ruby version
+
 **v2.3.3**
+
 ### Configuration
-  ```
-  run bundle install
-  ```
+
+```
+bundle install
+```
+
 ### Database initialization
-  ```
-  rails db:setup && rails db:migrate
-  ```
+
+```
+rails db:setup && rails db:migrate
+```
+
 ### How to run the test suite
-  ```
-  rails qa
-  ```
+
+```
+rails qa
+```
 
 ### Deployment
+
 Every push to master is deployed automatically to [alixnael.herokuapp.com](alixnael.herokuapp.com)
